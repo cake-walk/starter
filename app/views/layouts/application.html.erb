@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Rails3DeviseRspecCucumber</title> 
+	<%= stylesheet_link_tag "application" %>
+<%= javascript_include_tag "application" %> <%= csrf_meta_tags %> 
+</head> 
+<body> 
+
+ <section id="page"> <!-- Defining the #page section with the section tag -->
+
+ <header> <!-- Defining the header section of the page with the appropriate tag -->
+
+ <hgroup>
+
+ <hgroup> 
+	<%= image_tag("logo.png", :alt => "A king-making recommender app", :class => "logo") %>
+	<h1>Demo
+  </h1> 
+	<h3>an oddnode demo</h3> 
+	</hgroup>
+
+ <nav class="clear"> <!-- The nav link semantically marks your main site navigation --> 
+	<ul class="hmenu"> 
+	 <li><%= link_to "Home", root_path %></li>
+<%= render 'devise/menu/registration_items' %> <%= render 'devise/menu/login_items' %>
+
+ </ul> 
+</nav>
+
+</header> 
+<section id="articles"> <!-- A new section with the articles -->
+
+ <!-- Article 1 start -->
+
+ <div class="line"></div> <!-- Dividing line --> 
+<%- flash.each do 
+	|name, msg| -%> <%= content_tag :div, msg, :id=> "flash_#{name}" if msg.is_a?(String) %>
+ <%- end -%>
+
+<%= yield %> 
+</section> 
+</div> 
+<footer> <!-- Marking the footer section -->Footer text etc</footer> 
+</body> 
+</html>
