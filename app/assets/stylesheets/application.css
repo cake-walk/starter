@@ -11,21 +11,18 @@ display:block;
 }
 
 header img {
-  padding: 1em;
-  background: #fff;
+background:#fff;
+padding:1em;
 }
 
 p {
 color:#000;
-font-size:16px;
 font-family:"Lucida Grande", Arial, sans-serif;
+font-size:16px;
 font-weight:400;
-margin-top:0;
 line-height:1.5em;
+margin-top:0;
 padding-bottom:1em;
-}
-
-.logo {
 }
 
 h1,h2,h3 {
@@ -42,12 +39,12 @@ margin:0 0 1em;
 h1 {
 color:#778fbd;
 font-family:"Lucida Grande", Arial, sans-serif;
+font-size:3.5em;
 font-weight:500;
 line-height:32px;
 margin-top:4px;
-font-size:3.5em;
-text-transform:uppercase;
 padding:0.5em 0 0;
+text-transform:uppercase;
 }
 
 h2 {
@@ -56,20 +53,20 @@ font-family:"Lucida Grande", Arial, sans-serif;
 font-size:2.2em;
 font-weight:400;
 letter-spacing:0.01em;
-text-transform:uppercase;
 margin:0.83em 0 0;
+text-transform:uppercase;
 }
 
 h4 {
 font-weight:700;
-text-align:center;
 margin:1.33em 0;
+text-align:center;
 }
 
 a,a:visited {
 color:#0196e3;
-text-decoration:none;
 outline:none;
+text-decoration:none;
 }
 
 a:hover {
@@ -80,14 +77,12 @@ a img {
 border:none;
 }
 
-
-
 .line {
-height:1px;
 background-color:#24404c;
 border-bottom:1px solid #416371;
-overflow:hidden;
+height:1px;
 margin:1em 0;
+overflow:hidden;
 }
 
 article .line {
@@ -101,22 +96,22 @@ margin:2em 0;
 }
 
 nav {
+-moz-box-shadow:0 1px 1px #333;
+-webkit-box-shadow:0 1px 1px #333;
 background:#f8f8f8;
+border:1px solid #FCFCFC;
+box-shadow:0 1px 1px #333;
+padding:0 5px;
 position:absolute;
 right:0;
 top:1em;
-border:1px solid #FCFCFC;
--moz-box-shadow:0 1px 1px #333;
--webkit-box-shadow:0 1px 1px #333;
-box-shadow:0 1px 1px #333;
-padding:0 5px;
 }
 
 .clear:after {
+clear:both;
 content:".";
 display:block;
 height:0;
-clear:both;
 visibility:hidden;
 }
 
@@ -130,15 +125,15 @@ display:block;
 float:left;
 font-size:1.25em;
 font-weight:700;
-text-shadow:0 1px 1px #FFF;
-text-transform:uppercase;
 margin:5px 2px;
 padding:7px 10px 4px;
+text-shadow:0 1px 1px #FFF;
+text-transform:uppercase;
 }
 
 nav ul li a:hover {
-text-decoration:none;
 background-color:#f0f0f0;
+text-decoration:none;
 }
 
 nav,article,nav ul li a,figure {
@@ -148,16 +143,16 @@ border-radius:10px;
 }
 
 #page {
-width:960px;
-position:relative;
 margin:0 auto;
+position:relative;
+width:960px;
 }
 
 article {
 background-color:#213E4A;
-text-shadow:0 2px 0 #000;
 margin:3em 0;
 padding:20px;
+text-shadow:0 2px 0 #000;
 }
 
 figure {
@@ -169,36 +164,19 @@ overflow:hidden;
 width:500px;
 }
 
-
-
 a {
 color:#666;
 text-decoration:underline;
 }
-			
-			
-
 
 .submit input {
-  margin-left: 4.5em;
+margin-left:4.5em;
 }
-#form input:hover, #form textarea:hover{
-	background-color: lightyellow;
-}
-input:focus, textarea:focus{
-background-color: lightyellow;
-}
-
-/* form styles start here */
-
-
-
-/* end of form styles */
 
 footer {
+font-size:0.825em;
 margin-bottom:30px;
 text-align:center;
-font-size:0.825em;
 }
 
 footer p {
@@ -207,17 +185,17 @@ position:relative;
 }
 
 footer a,footer a:visited {
-color:#ccc;
 background-color:#213e4a;
+color:#ccc;
 display:block;
-z-index:100;
-position:relative;
 padding:2px 4px;
+position:relative;
+z-index:100;
 }
 
 footer a:hover {
-text-decoration:none;
 background-color:#142830;
+text-decoration:none;
 }
 
 footer a.by {
@@ -226,4 +204,8 @@ float:left;
 
 footer a.up {
 float:right;
+}
+
+#form input:hover,#form textarea:hover,input:focus,textarea:focus {
+background-color:#FFFFE0;
 }

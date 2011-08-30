@@ -1,15 +1,15 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-	<title>Rails3DeviseRspecCucumber</title> 
+	<title>Starter app</title> 
 	<%= stylesheet_link_tag "application" %>
 <%= javascript_include_tag "application" %> <%= csrf_meta_tags %> 
 </head> 
 <body> 
 
- <section id="page"> <!-- Defining the #page section with the section tag -->
+ <section id="page"> 
 
- <header> <!-- Defining the header section of the page with the appropriate tag -->
+ <header> 
 
  <hgroup>
 
@@ -20,7 +20,7 @@
 	<h3>an oddnode demo</h3> 
 	</hgroup>
 
- <nav class="clear"> <!-- The nav link semantically marks your main site navigation --> 
+ <nav class="clear"> 
 	<ul class="hmenu"> 
 	 <li><%= link_to "Home", root_path %></li>
 <%= render 'devise/menu/registration_items' %> <%= render 'devise/menu/login_items' %>
@@ -29,11 +29,11 @@
 </nav>
 
 </header> 
-<section id="articles"> <!-- A new section with the articles -->
+<section id="articles"> 
 
- <!-- Article 1 start -->
 
- <div class="line"></div> <!-- Dividing line --> 
+
+ <div class="line"></div> 
 <%- flash.each do 
 	|name, msg| -%> <%= content_tag :div, msg, :id=> "flash_#{name}" if msg.is_a?(String) %>
  <%- end -%>
@@ -41,6 +41,6 @@
 <%= yield %> 
 </section> 
 </div> 
-<footer> <!-- Marking the footer section -->Footer text etc</footer> 
+<footer> Footer text etc</footer> 
 </body> 
 </html>
